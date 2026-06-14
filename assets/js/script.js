@@ -8,7 +8,7 @@ var searchTermInput = document.getElementById('searchTerm');
 var searchButton = document.getElementById('searchButton');
 
 //4.use document.getElementById to select the searches list 
-var searchesList = document.getElementById('searchesList');
+var taskList = document.getElementById('myTasks');
 
 //5.use the getElementById to select the message paragraph element
 var messageParagraph = document.getElementById('message');
@@ -43,6 +43,7 @@ searchButton.addEventListener('click', function() {
     var deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     li.appendChild(deleteButton);
+    taskList.appendChild(li);
 
 // 14. add an event listener to the delete button that listens for a click event
     deleteButton.addEventListener('click', function() {
@@ -56,16 +57,9 @@ searchButton.addEventListener('click', function() {
         tasks.splice(index, 1);
         messageParagraph.innerHTML = "Task deleted successfully.";
       }
-    });
-// 17. add the delete button to the new li element
-newLi.appendChild(deleteButton);
-
-// 18. add the new li element to the searches list
-searchesList.appendChild(newLi);
-
-// 19. clear the searchTerm input field
+// 17. clear the searchTerm input field
 searchTermInput.value = '';
 
-// 20. give feedback to the user that the task was added successfully
+// 18. give feedback to the user that the task was added successfully
 messageParagraph.innerHTML = "Task added successfully.";
-  });
+}

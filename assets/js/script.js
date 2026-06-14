@@ -1,25 +1,13 @@
-// 1. use document.getElementById to select the searchTerm Button
-var searchTerm = document.getElementById("searchTerm");
+// 1. create an empty array of tasks
+var tasks = [];
 
-// 2. use document.getElementById to select the searchButton Button
-var searchButton = document.getElementById("searchButton");
+// 2. use document.getElementById to select the searchTerm input field and the taskList ul element
+var searchTermInput = document.getElementById('searchTerm');
 
-// 3. add an event listener to the searchButton that calls the search function when clicked
-searchButton.addEventListener("click", onClickSearhButton);
+//3. use document.getElementById to select the search button element
+var searchButton = document.getElementById('searchButton');
 
-function onClickSearhButton() {
-  // 4. use the value property of the searchInput to get the search term
- var term = searchTerm.value;
-  
- // 5. select the searches div using document.getElementById
-  var searchesDiv = document.getElementById("searches");
-  
-  // 6. create a new li element using document.createElement
-  var newLiEl = document.createElement("li");
-  
-  // 7. set the innerHTML of the new paragraph to the search term
-  newLiEl.innerHTML = term;
-  
-  // 8. append the new paragraph to the searches div
-  searchesDiv.appendChild(newLiEl);
-}
+//4.use document.getElementById to select the searches list 
+var searchesList = document.getElementById('searchesList');
+
+//5.

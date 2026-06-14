@@ -78,3 +78,7 @@ In the future, I would like to add:
 - A completed task style
 - A clear all tasks button
 - Local storage so tasks stay on the page after refreshing
+
+## Links
+https://github.com/Maria-Dragomir/Interractive-To-Do-List.git
+https://maria-dragomir.github.io/Interractive-To-Do-List/

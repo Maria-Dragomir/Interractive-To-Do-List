@@ -65,6 +65,15 @@ button {
     cursor: pointer;
 }
 
+#myTasks li button {
+    margin-left: 15px;
+    padding: 2px 8px;
+    font-size: 12px;
+    line-height: 1;
+    height: auto;
+}
+}
+
 input[type="text"] {
     padding: 9px;
     width: 20%;

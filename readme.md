@@ -1,69 +1,80 @@
-# The Interactive TODO List
+# Interactive To-Do List
 
-## Challenge
+## Project Overview
 
-Now that you're familiar with making web pages interactive using JavaScript, it's time to put your skills to the test! In this challenge, you will create an interactive TODO list application.
+This project is an interactive To-Do List created using HTML, CSS and JavaScript.
 
-### Requirements:
-
-- Users should be able to **add new tasks** to the list.
-- Tasks should be displayed dynamically on the web page.
-- Ensure that only **valid tasks** (non-empty or sensible values) are allowed to be added.
-- Users should be able to **delete tasks** from the list.
-
-### BONUS:
-
-- Implement an **edit feature** so users can modify existing tasks and save changes.
-
-## Key Learnings
-
-By completing this exercise, you will learn:
-
-- How to manipulate the **Document Object Model (DOM)** using JavaScript.
-- How to **read, create, update, and delete** elements within the DOM.
-- How to handle **user inputs** and implement **form validation**.
-- Bonus: How to implement editing functionality for dynamic web content.
+The aim of this challenge was to practise using JavaScript to make a web page interactive. Users can type a task into the input field, add it to the page, receive feedback messages, and delete tasks once they are no longer needed.
 
 ## User Story
 
-As a user, I want to be able to manage my tasks using a simple web-based TODO list. I should be able to add new tasks, delete tasks, and, for bonus points, edit existing tasks and save the changes. The application should give me feedback if I try to add invalid tasks.
+As a user, I want to be able to add tasks to a list so that I can keep track of things I need to do.
 
-## Acceptance Criteria
+As a user, I also want to be able to delete tasks from the list once they are complete or no longer needed.
 
-- Users can add a task by typing into an input field and clicking a button. The new task is immediately displayed in the task list.
-- Tasks must be validated before being added (e.g., non-empty and unique).
-- Users can delete tasks from the list, and the task should be removed from the DOM.
-- (Bonus) Users can click an "Edit" button for a task, modify the text, and save the changes.
+## Features
 
-## Getting Started
+- Input field for entering a new task
+- Add Task button
+- Tasks displayed dynamically on the page
+- Validation to stop empty tasks being added
+- Validation to stop duplicate tasks being added
+- Delete button for each task
+- Feedback messages for the user
 
-To get started with this exercise:
+## Technologies Used
 
-1. Create a new folder for the project.
-2. Set up an `index.html` file with an input field for adding tasks and a section to display the task list.
-3. Use JavaScript to:
-   - Handle the addition of new tasks.
-   - Validate the task input.
-   - Dynamically display and update tasks on the page.
-   - Implement the delete functionality.
-4. (Bonus) Add functionality to allow tasks to be edited in place and saved.
+- HTML
+- CSS
+- JavaScript
+- DOM manipulation
 
-## Hints
+## JavaScript Features Practised
 
-- Use **event listeners** to capture user actions (e.g., clicking the "Add" button or hitting the "Enter" key).
-- Store tasks in an **array** and render the array's contents into the DOM after every operation (add, delete, or edit).
+In this project, I practised:
 
-## Submission
+- `document.getElementById()`
+- `addEventListener()`
+- `.value`
+- `.trim()`
+- `if` statements
+- arrays
+- `.includes()`
+- `.push()`
+- `.indexOf()`
+- `.splice()`
+- `document.createElement()`
+- `appendChild()`
+- `removeChild()`
+- `innerHTML`
 
-Once your site has been migrated and deployed, submit the link to your GitHub Repo and GitHub Pages deployment.
+## How It Works
 
-## Useful Online Resources
+The user types a task into the input field and clicks the Add Task button.
 
-1. **MDN Web Docs - JavaScript DOM Manipulation**
+JavaScript then checks that the input is not empty and that the task has not already been added. If the task is valid, it is added to an array and displayed as a new list item under the My Tasks section.
 
-   - This documentation provides comprehensive information about how to use JavaScript to manipulate the DOM.
-   - [Read more](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+Each task also has a Delete button. When the Delete button is clicked, the task is removed from the page and from the array.
 
-2. **JavaScript Event Listeners**
-   - A guide on how to use event listeners in JavaScript to handle user interactions.
-   - [Read more](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+## Validation
+
+The project includes basic validation:
+
+- Empty tasks cannot be added.
+- Duplicate tasks cannot be added.
+- A message is shown to the user if the task is invalid.
+
+## What I Learned
+
+This challenge helped me understand how JavaScript can be used to change what appears on a web page after the page has loaded.
+
+I also learned how to create new HTML elements using JavaScript, add them to the page, remove them, and keep track of values using an array.
+
+## Future Improvements
+
+In the future, I would like to add:
+
+- An edit task feature
+- A completed task style
+- A clear all tasks button
+- Local storage so tasks stay on the page after refreshing
